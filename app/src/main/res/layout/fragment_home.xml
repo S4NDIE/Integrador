@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.fragments.HomeFragment">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            mapbox:mapbox_cameraTargetLat="40.73581"
+            mapbox:mapbox_cameraTargetLng="-73.99155"
+            mapbox:mapbox_cameraZoom="16"
+            mapbox:mapbox_cameraZoomMax="19"
+            mapbox:mapbox_uiAttribution="false"
+            mapbox:mapbox_uiCompassGravity="center_vertical|right"
+            mapbox:mapbox_uiLogo="false"
+            mapbox:mapbox_uiQuickZoomGestures="true">
+
+        <ImageView
+            android:id="@+id/imageGps"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="135dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_gps" />
+
+
+        <ImageView
+            android:id="@+id/iconAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="150dp"
+            android:src="@drawable/ic_add" />
+
+
+        <ImageView
+            android:id="@+id/iconRemove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ic_remove" />
+
+
+        <Button
+            android:id="@+id/btnEmergencia"
+            style="@style/ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp"
+            android:visibility="gone"
+            android:text="Solicitar Emergencia" />
+
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+</LinearLayout>

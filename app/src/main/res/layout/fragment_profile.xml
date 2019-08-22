@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Views.fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Perfil" />
+
+                <ImageView
+                    android:id="@+id/photo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:background="@drawable/new_logo"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/fullName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:enabled="false"
+                        android:text="Carlos Mario Jaramillo"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <ImageButton
+                        android:id="@+id/editPersonalInfo"
+                        style="@style/ButtonPrimary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_outline_edit"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Información personal"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/firstName"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:text="Carlos Mario" />
+
+            <EditText
+                android:id="@+id/lastName"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:text="Jaramillo González" />
+
+            <EditText
+                android:id="@+id/email"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic__email"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:text="carmajago@gmail.com" />
+
+            <EditText
+                android:id="@+id/phone"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_outline_phone"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:text="+573133569324" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="10dp"
+                android:background="#C7C7C7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Configuración"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonChangePassword"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:drawableLeft="@drawable/ic_lock"
+                android:drawableRight="@drawable/ic_next"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:text="Cambiar contraseña" />
+
+            <Button
+                android:id="@+id/buttonLogout"
+                style="@style/Text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00FFFFFF"
+                android:drawableLeft="@drawable/ic_logout"
+                android:drawableRight="@drawable/ic_next"
+                android:drawablePadding="10dp"
+                android:gravity="left|center"
+                android:layout_marginBottom="20dp"
+                android:text="Cerrar sesión" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

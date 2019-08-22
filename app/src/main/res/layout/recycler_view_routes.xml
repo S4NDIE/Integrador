@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Médicina general"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/danger_level"
+            style="@style/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:text="20"
+            android:textSize="18dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Origen: " />
+
+            <TextView
+                android:id="@+id/origin"
+                style="@style/Text"
+                android:layout_marginLeft="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La camelia" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Text"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Destino: " />
+
+            <TextView
+                android:id="@+id/destination"
+                style="@style/Text"
+                android:layout_marginLeft="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="La camelia" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/distance"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_address"
+            android:drawablePadding="10dp"
+            android:text="cra 23#70-20" />
+
+
+        <TextView
+            android:id="@+id/speed"
+            style="@style/Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:drawableLeft="@drawable/ic_calendar_with_a_clock_time_tools"
+            android:drawablePadding="10dp"
+            android:text="cra 23#70-20" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
